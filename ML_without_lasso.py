@@ -158,7 +158,7 @@ from sklearn.model_selection import KFold
 from sklearn.metrics import r2_score
 import numpy as np
 
-# Assuming X and y are already defined in your script
+
 X_vals = X.values.flatten()
 y_vals = y.values.flatten()
 
