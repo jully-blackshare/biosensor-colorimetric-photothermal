@@ -131,13 +131,13 @@ def compute_aic_bic(y_true, y_pred, k):
     bic = k * np.log(n) - 2 * log_likelihood
     return aic, bic
 
-"""lin_order = X_train.shape[1] + 1
+lin_order = X_train.shape[1] + 1
 poly_order = poly.named_steps['lassocv'].coef_.shape[0] + 1
 sig_order = 5
 
 aic_lin, bic_lin = compute_aic_bic(y_test, y_lin_pred, lin_order)
 aic_poly, bic_poly = compute_aic_bic(y_test, y_poly_pred, poly_order)
-aic_sig, bic_sig = compute_aic_bic(y_test, y_sig_pred, sig_order)"""
+aic_sig, bic_sig = compute_aic_bic(y_test, y_sig_pred, sig_order)
 
 from sklearn.model_selection import cross_val_score
 from sklearn.metrics import make_scorer, r2_score
